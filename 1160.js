@@ -22,7 +22,9 @@ const { count } = require("console");
                 if (word.length === 0) {
                     ans += w.length;
                 }
+                continue;
             }
+            break;
         }
     })
     
