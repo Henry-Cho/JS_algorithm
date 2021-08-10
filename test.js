@@ -1,12 +1,4 @@
-/*
- * Complete the 'maxInversions' function below.
- *
- * The function is expected to return a LONG_INTEGER.
- * The function accepts INTEGER_ARRAY arr as parameter.
- */
-
-function maxInversions(arr) {
-    // Write your code here
+function getMaxInversions(arr) {
     let count = 0;
     for (let i = 0; i < arr.length - 2; i++) {
         for (let j = i+1; j < arr.length - 1; j++) {
@@ -26,4 +18,4 @@ function maxInversions(arr) {
     return count;
 }
 
-console.log(maxInversions([4, 1, 3, 2, 5]));
+console.log(getMaxInversions([4, 1, 3, 2, 5]));
